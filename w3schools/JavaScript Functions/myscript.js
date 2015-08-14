@@ -80,18 +80,70 @@ function findMax() {
     }
     return max;
 }
-document.write(findMax(4, 5, 6)+"<br/>");
+document.write(findMax(4, 5, 6) + "<br/>");
 
 
 // Create a function to summarize all input values:
-function sumAll () {
-	var i, sum=0;
-	for (var i = 0; i < arguments.length; i++) {
-		sum += arguments[i];
-	}
-	return sum;
+function sumAll() {
+    var i, sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
 }
-document.write(sumAll(5,10,5,5)+"<br/>");
+document.write(sumAll(5, 10, 5, 5) + "<br/>");
 
 // ------------------------------------------------------
+
+// Invoking a Function as a Method
+var myObj = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: function() {
+        return this.firstName + " " + this.lastName + "<br/>";
+    }
+}
+document.write(myObj.fullName());
+// The fullName method is a function. The function belongs to the object. myObject is the owner of the function.
+
+
+// Invoking a Function with a Function Constructor
+
+// A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
+
+// This is a function constructor:
+function myFun(arg1, arg2) {
+    this.firstName1 = arg1;
+    this.lastName1 = arg2;
+}
+// This	creates a new object
+var x = new myFun('Sanjay', 'Das');
+document.write(x.firstName1 + "<br/>");
+
+
+// Invoking a Function with a Function Method
+
+// call() takes the function arguments separately
+var myObj1;
+
+function MultiFun(a, b) {
+    return a * b;
+}
+myObj1 = MultiFun.call(myObj1, 10, 2);
+document.write(myObj1 + "<br/>");
+
+
+// apply() takes the function arguments in an array.
+var myObj2, myArr;
+
+function MultiFun1(a, b) {
+    return a * b;
+}
+myArr = [10, 3];
+myObj2 = MultiFun1.apply(myObj2, myArr);
+document.write(myObj2 + "<br/>");
+
+
+// ------------------------------------------------------
+
 
