@@ -1,13 +1,18 @@
-function letsCalc(a, b, c, d) {
-    var a, b, c, d;
-    return (a * b) / c + d;
-}
+// function letsCalc(a, b, c, d) {
+//     var a, b, c, d;
+//     return (a * b) / c + d;
+// }
 
+<<<<<<< Updated upstream
 document.write(letsCalc(5, 6, 2, 5) + "</br>");
 
+=======
+// document.write(letsCalc(5, 6, 2, 5) + "</br>");
+>>>>>>> Stashed changes
 // ------------------------------------------------------
 
 // Function Expressions
+<<<<<<< Updated upstream
 // Anonymous function (a function without a name)
 var x = function(e, f) {
     var e, f;
@@ -21,11 +26,24 @@ document.write(x(2, 2) + "</br>");
 function toCel(Far) {
     return Math.round((5 / 9) * (Far - 32));
 }
+=======
+// var x = function(e, f) {
+//     var e, f;
+//     return e + f;
+// }
 
-document.write(toCel(60) + "<br/>");
+// document.write(x(2, 2) + "</br>");
+// ------------------------------------------------------
+// function toCel(Far) {
+//     return Math.round((5 / 9) * (Far - 32));
+// }
+>>>>>>> Stashed changes
+
+// document.write(toCel(60) + "<br/>");
 // ------------------------------------------------------
 
 // Self-Invoking Functions
+<<<<<<< Updated upstream
 (function() {
     document.getElementById("demo").innerHTML = "This is a self-invoked call!";
 })();
@@ -145,5 +163,71 @@ document.write(myObj2 + "<br/>");
 
 
 // ------------------------------------------------------
+=======
+// (function() {
+//     document.getElementById("demo").innerHTML = "This is a self-invoked call!";
+// })();
+
+// Parameter Defaults
+// If a function is called with missing arguments (less than declared), the missing values are set to: undefined
+
+// Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter.
+// function myFunction(x, y) {
+//     if (y === undefined) {
+//         y = 0;
+//     };
+//     return x * y;
+// }
+
+// document.write(myFunction(4)+"<br/>");
+// ------------------------------------------------------
+// For loop statement
+// for ([initialization]; [condition]; [final-expression])
+//    statement
+// function myFunction() {
+//     var text = "";
+//     var i;
+//     for (i = 0; i < 5; i++) {
+//         text += "The number is " + i + "<br>";
+//     }
+//     document.getElementById("demo2").innerHTML = text;
+// }
+
+var cars= ["BMW","Volvo", "Saab", "Ford"];
+var i, len, text;
+for (var i = 0; len=cars.length, text=""; i<len; i++)  {
+	text+=cars[i]+"<br/>";
+}
+
+do
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 
