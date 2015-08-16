@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>JavaScript HTML DOM</title>
-</head>
-<body>
-	<h1>JavaScript HTML DOM</h1>
 
-	<!-- JavaScript HTML DOM Events -->
-	<!-- Examples of HTML events:
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript HTML DOM</title>
+    <style>
+		/*div{background-color: yellow; padding: 30px;}*/
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript HTML DOM</h1>
+    <!-- JavaScript HTML DOM Events -->
+    <!-- Examples of HTML events:
 
 	When a user clicks the mouse
 	When a web page has loaded
@@ -17,15 +21,40 @@
 	When an input field is changed
 	When an HTML form is submitted
 	When a user strokes a key -->
+    <h3 onclick="this.innerHTML='Woah! This is a JS <strong>onclick</strong> event!'">CLICK</h3>
+    <p onclick="changeText(this)">ClickAgain</p>
+    What is the time now?
+    <br>
+    <button onclick="showDate()">ClickHere to know!</button>
+    <p id="demo"></p>
+    
+    <button id="btn">Button with EventListner</button>
+    <p id="demo1"></p>
 
-	<h3 onclick="this.innerHTML='Woah! This is a JS <strong>onclick</strong> event!'">CLICK</h3>
+    <button id="btn1">AnotherExamp.</button> <br> <br>
 
-	<p onclick="changeText(this)">ClickAgain</p>
+    <button id="btn2">MultipleEventsOccur</button>
+    <p id="demo2"></p>
 
-	What is the time now? <br>
-	<button onclick="showDate()">ClickHere to know!</button>
-	<p id="demo"></p>
+	<!-- Event propagation -->
+	<div id="myDiv1">
+		<p id="myP1">ClickMe, I am Bubbling! FLASE</p>
+	</div>
+	<br>
+	<div id="myDiv2">
+		<p id="myP2">ClickMe, I am Capturing! TRUE</p>
+	</div>
 
-	<script src="myscript.js"></script>
+	
+	<div id="newDiv">
+	    <p id="p1">This is para 1.</p>
+	    <p id="p2">This is para 2.</p>
+	</div>
+
+	
+
+
+    <script src="myscript.js"></script>
 </body>
+
 </html>
