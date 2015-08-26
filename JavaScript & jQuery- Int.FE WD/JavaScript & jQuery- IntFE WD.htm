@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>JavaScript & jQuery- Int.FE WD</title>
-</head>
-<body>
-	
 
-<script src="myscript.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript & jQuery- Int.FE WD</title>
+    <style>
+    #hotelExample {
+        background-color: #FFFEA0;
+        padding: 10px;
+        margin: 15px 0;
+        border: 1px solid #CACACA;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript & jQuery- Int.FE WD</h1>
+    <div id="hotelExample">
+        <h2>Hotel Example using Function, Method & Objects</h2>
+        <p id="info">
+            Name of the Hotel: <span id="hotelName"></span>
+            <br> Regular Room Rate: <span id="roomRate"></span>
+            <br> Special Rate: <span id="specialRate"></span>
+            <br>
+        </p>
+    </div>
+    <strong>Previous & next sibling traversing:</strong>
+    <ul>
+        <li id="one" class="hot"><em>fresh</em>figs</li>
+        <li id="two" class="hot">pine nuts</li>
+        <li id="three" class="hot">honey</li>
+        <li id="four" class="hot">balsamic vinegar</li>
+    </ul>
+    <strong>Creating a new list using JavaScript:</strong>
+    <ul id="domList"></ul>
+    <br>
+    <br>
+    <br>
+<!--     <fieldset>
+        <h2>SampleForm</h2>
+        <p>HTML EVENT HANDLER</p>
+        <form method="post" action="#">
+            <label for="username">Create a username:</label>
+            <input type="text" id="username" onblur="checkUsername()" />
+            <div id="feedback"></div>
+            <label for="password">Create a password:</label>
+            <input type="text" id="password" />
+            <input type="submit" value="Sign Up!" />
+        </form>
+    </fieldset> -->
+
+    <fieldset>
+        <h2>SampleForm</h2>
+        <p>TRADITIONAL DOM EVENT HANDLERS </p>
+        <form method="post" action="#">
+            <label for="username">Create a username:</label>
+            <input type="text" id="username" />
+            <div id="feedback"></div>
+            <label for="password">Create a password:</label>
+            <input type="text" id="password" />
+            <input type="submit" value="Sign Up!" />
+        </form>
+    </fieldset>
+
+    <br>
+    <br>
+    <br>
+    <script src="myscript.js"></script>
 </body>
+
 </html>
