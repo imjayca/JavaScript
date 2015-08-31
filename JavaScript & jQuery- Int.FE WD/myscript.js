@@ -167,11 +167,13 @@ function checkUsername () {
 }
 */
 
-// TRADITIONAL DOM EVENT HANDLERS 
 
+
+// TRADITIONAL DOM EVENT HANDLERS 
+/*
 function checkUsername () {
     var elMsg= document.getElementById('feedback');
-    if (this.value.lenght<5) {
+    if (this.value.length<5) {
         elMsg.textContent='Username must be 5 char or long!';
     }else{
         elMsg.textContent='';
@@ -180,3 +182,18 @@ function checkUsername () {
 
 var elUsername= document.getElementById('username');
 elUsername.onblur= checkUsername;
+*/
+
+
+//USING EVENT LISTENERS
+function checkUsername() {
+    var elMsg= document.getElementById('feedback');
+    if (this.value.length<5) {
+        elMsg.textContent= 'Username must be 5 char or long!';
+    }else{
+        elMsg.textContent='';
+    }
+}
+
+var elUsername= document.getElementById('username');
+elUsername.addEventListener('blur', checkUsername, false);
