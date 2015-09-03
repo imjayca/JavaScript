@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Directives</title>
+	<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+	<!-- Data Binding
+	<div data-ng-app="" data-ng-init="quantity=5; price=5">
+		<h2>Cost Calculator</h2>
+		Quantity: <input type="text" data-ng-model='quantity'>
+		Price: <input type="text" data-ng-model='price'>
+
+		<p><b>Total in dollar: {{quantity*price}}</b></p>
+	</div> -->
+
+
+	<!-- Repeating HTML Elements
+	<div ng-app="" ng-init="names=['Jay','Moon','Sana']">
+	<p>Looping wth ng-repeat:</p>
+	<ul>
+		<li ng-repeat="x in names">{{x}}</li>
+	</ul>
+	</div> -->
+
+
+	The ng-repeat directive used on an array of objects:
+	<div ng-app="" ng-init="names=[
+	{name: 'Jay', country: 'BD'},
+	{name: 'Moon', country: 'IND'},
+	{name: 'Sana', country:'UK'}]">
+		<p>Looping with objects:</p>
+		<ul>
+			<li ng-repeat="x in names">
+				{{x.name+', '+x.country}}
+			</li>
+		</ul>
+	</div>
+
+	
+
+</body>
+</html>
